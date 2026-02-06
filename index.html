@@ -6,7 +6,7 @@
     <title>Projet — Landing page</title>
 
     <!-- Bug intentionnel #1 : chemin CSS incorrect (à diagnostiquer via DevTools) -->
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="apple-style.css"/>
   </head>
 
   <body>
@@ -16,12 +16,12 @@
           <!-- Bug intentionnel #2 : src cassé (chemin/nom) -->
           <img
             class="brand__logo"
-            src="assets/logo.svg"
+            src="assets/6b6092d2-ee94-41d2-839b-a39b448a831f.png"
             alt="Logo du projet"
             width="32"
             height="32"
           />
-          <span class="brand__name">NomDuProjet</span>
+          <span class="brand__name">Focus Flow</span>
         </a>
 
         <nav class="site-nav" aria-label="Navigation principale">
@@ -40,10 +40,11 @@
             <p class="kicker">One-liner (10s)</p>
 
             <!-- Bug intentionnel #3 : classe HTML typo → une règle CSS ne s’applique pas -->
-            <h1 class="hero__tilte">J’aide [cible] à [objectif] sans [friction].</h1>
+            <h1 class="hero__tilte">J’aide les aspirant auto entrepreneurs à lancer leurs premier projet et aller au bout de leurs objectifs.</h1>
 
             <p class="hero__subtitle">
-              Pitch 30s : 4–6 phrases. Une situation réelle, pas de jargon.
+             Une application qui aide les auto-entrepreneurs à lancer leur premier projet.
+             et pour tous ceux qui font des to-do list mais qui ne les suivent jamais, qui commencent plein de tâches mais n'en finissent aucun.
             </p>
 
             <div class="hero__actions">
@@ -55,10 +56,10 @@
           <div class="hero__visual" aria-hidden="true">
             <img
               class="hero__image"
-              src="./assets/hero.svg"
+              src="assets/Gemini_Generated_Image_atrxxbatrxxbatrx.png"
               alt=""
-              width="420"
-              height="260"
+              width="300"
+              height="200"
             />
           </div>
         </div>
@@ -68,9 +69,9 @@
         <div class="container">
           <h2 class="section__title">Le problème</h2>
           <ul class="bullets">
-            <li>[Situation] Quand …, les gens …</li>
-            <li>[Douleur] Ça coûte … (temps / stress / argent)</li>
-            <li>[Alternative] Aujourd’hui ils font …</li>
+            <li>Beaucoup d’auto-entrepreneurs abandonnent non pas par manque d’idées ou de talent, mais parce qu’ils ne finissent jamais ce qu’ils commencent</li>
+            <li>Des magnifiques projets ne vont jamais voir le jours</li>
+            <li> Ils font des plannings magnifiques le dimanche, commencent 10 tâches le lundi, et vendredi rien n’est terminé.</li>
           </ul>
         </div>
       </section>
@@ -80,16 +81,16 @@
           <h2 class="section__title">Pour qui ?</h2>
           <div class="cards">
             <article class="card">
-              <h3 class="card__title">Segment principal</h3>
+              <h3 class="card__title">Aspirants auto-entrepreneurs </h3>
               <p class="card__text">
-                Décris ta cible concrètement (métier, contexte, contraintes).
+                En France, 300 000 personnes se lancent en auto-entrepreneur chaque année, avec le rêve d'être leur propre patron. Mais 80% abandonnent dans les 6 mois. ce n'est pas toujours un problème d'argent, une question de mauvaise idée. c'est dû a un manque de discipline et de structure
               </p>
             </article>
 
             <article class="card">
               <h3 class="card__title">Pourquoi eux ?</h3>
               <p class="card__text">
-                Explique pourquoi ce segment souffre le plus et pourquoi c’est prioritaire.
+                les auto-entrepreneurs travaillent seuls, ils ont un projet précis et ils abondonnent souvent et ils ont besoin d'être accompagné.
               </p>
             </article>
           </div>
@@ -98,19 +99,23 @@
 
       <section class="section" id="mvp">
         <div class="container">
-          <h2 class="section__title">MVP (3–6 items)</h2>
+          <h2 class="section__title">MVP </h2>
           <div class="cards">
             <article class="card">
-              <h3 class="card__title">Feature 1</h3>
-              <p class="card__text">Une promesse concrète, testable.</p>
+              <h3 class="card__title">Planning quotidien avec time-blocking</h3>
+              <p class="card__text">Fonctionnalité qui permet d'organiser sa journée par créneaux horaires</p>
             </article>
             <article class="card">
-              <h3 class="card__title">Feature 2</h3>
-              <p class="card__text">Pas de jargon, une situation réelle.</p>
+              <h3 class="card__title">Mode Focus avec timer</h3>
+              <p class="card__text">Permet de ce focaliser sur une seul tâche à la fois, cela renforce la dicipline et evite le multitasking.</p>
             </article>
             <article class="card">
-              <h3 class="card__title">Feature 3</h3>
-              <p class="card__text">Ce que tu fais en premier.</p>
+              <h3 class="card__title">Tracker de complétion</h3>
+              <p class="card__text">donne une Visualisation des terminées vs abandonnées, offre un suivi de la progression du projet.</p>
+            </article>
+             <article class="card">
+              <h3 class="card__title">IA accompagnatrice</h3>
+              <p class="card__text">Offre un accompagnement étape par étape personnaliser selon le projet et le secteur d'activité.</p>
             </article>
           </div>
         </div>
@@ -120,9 +125,9 @@
         <div class="container">
           <h2 class="section__title">Contact</h2>
           <p class="section__lead">
-            Call-to-action : comment on te contacte, ou un lien (même fictif).
+           Disponible sur:
           </p>
-
+          <img src="assets/google-play-app-store-apple-apple-e2420395e8f1ec53a4cf290200c94f78.png" alt="téléchargement sur App store et google play" width="155px"
           <div class="contact">
             <!-- Bug intentionnel #4 : typo dans la classe → style “primary” manquant -->
             <a class="btn btn--primary" href="mailto:ton.email@example.com">Envoyer un email</a>
@@ -135,7 +140,7 @@
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <p class="site-footer__text">
-          © <span id="year">2026</span> — NomDuProjet. Fait en Semaine 2.
+          © <span id="year">2026</span> — Focus Flow. Fait en Semaine 2.
         </p>
       </div>
     </footer>
