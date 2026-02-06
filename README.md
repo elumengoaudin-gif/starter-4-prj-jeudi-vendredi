@@ -1,15 +1,31 @@
-# Starter (S2) — À corriger puis personnaliser
 
-## Objectif
+# Mon Projet - [FocusFlow]
 
-Ce starter est **volontairement imparfait**. Ton premier job : le rendre “sain”, puis le personnaliser pour présenter ton projet.
+## Contexte
+Projet de présentation web réalisé en 2 jours (semaine 2).
+Objectif : présenter mon idée de projet avec HTML/CSS.
 
-## Comment l’ouvrir
+## Comment ouvrir la page
 
-- Ouvre le fichier `index.html` dans ton navigateur.
-- Utilise **DevTools** (Elements/Styles) pour comprendre ce qui se passe.
+1. Aller dans le dossier du projet
+2. Ouvrir le fichier `index.html` dans un navigateur
 
-## Règle
+### Avant (jeudi)
+- CSS ne chargeait pas (page blanche avec texte brut)
 
-- **1 bug = 1 commit** (micro-fix) + preuve avant/après dans ton README.
+### Après (vendredi)
+- CSS chargé : page avec mise en forme
+- Images affichées correctement
+- Contenu personnalisé pour mon projet
 
+## Bugs corrigés
+
+1. **Bug** : Le CSS ne se chargeait pas
+   - **Cause** : Mauvais chemin dans index.html
+   - **Fix** : Changé `href="css/styles.css"` en `href="styles.css"`
+   - **Commit** : `fix: load stylesheet`
+
+2. **Bug** : Images ne s'affichaient pas
+   - **Cause** : Chemin incorrect
+   - **Fix** : Corrigé les chemins vers `assets/`
+   - **Commit** : `fix: correct image paths`
